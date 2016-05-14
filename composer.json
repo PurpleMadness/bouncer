@@ -1,5 +1,5 @@
 {
-    "name": "silber/bouncer",
+    "name": "purplemadness/bouncer",
     "description": "Bouncer handles roles and abilities for Laravel's ACL.",
     "keywords": ["laravel", "acl", "roles", "abilities", "capabilities", "permissions"],
     "license": "MIT",
