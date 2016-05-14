@@ -34,8 +34,11 @@ class Clipboard
                 return;
             }
 
-            if ($id = $this->checkGetId($authority, $ability, $model)) {
-                return $this->allow('Bouncer granted permission via ability #'.$id);
+
+            if(!$gate->has($ability)) {
+                if ($id = $this->checkGetId($authority, $ability, $model)) {
+                    return $this->allow('Bouncer granted permission via ability #'.$id);
+                }
             }
 
             if ($this->exclusive) {
